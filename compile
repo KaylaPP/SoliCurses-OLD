@@ -1,2 +1,0 @@
-#!/bin/bash
-clang++ -std=gnu++11 -lncurses ./main.cpp -o ./Solitaire
