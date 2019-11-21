@@ -1,0 +1,31 @@
+Card movement scenarios:
+	Discard to:
+	Can't move more than 1 card
+		Tableau:
+			Only if card in discard is last card in discard and if is:
+				King going to blank space,
+				Other card 1 less than the last card in destination and is differently colored
+		Foundation:
+			Only if card matches the suit and is,
+			One greater than the last card in foundation
+		Discard:
+			Impossible
+	Foundation to:
+	Can't move more than 1 card
+		Tableau:
+			Same as Discard-Tableau
+		Foundation:
+			Destination must be blank and original card must be King, otherwise impossible
+		Discard:
+			Impossible
+	Tableau to:
+	Can move multiple cards at once
+	Whether destination is valid depends on the root card
+		Tableau:
+			Only if King to blank space or,
+			Card moved is one less than card in destination and is different color
+		Foundation:
+			Only if Ace to blank space or,
+			Card of one greater value to destination and with same suit
+		Discard:
+			Impossible
